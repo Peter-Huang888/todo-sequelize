@@ -15,7 +15,7 @@ app.use(session({
   saveUninitialized: true
 }))
 app.use(express.urlencoded({ extended: true }))
-app.use(methodOverride('method'))
+app.use(methodOverride('_method'))
 usePassport(app)
 
 app.use(flash())
